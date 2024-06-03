@@ -1,0 +1,133 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#logo {
+  width: 70px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+  position: fixed;
+  width: 90vw;
+  z-index: 100;
+}
+
+#subtext1 {
+  font-size: 60px;
+}
+
+#subtext2 {
+  font-size: 90px;
+}
+
+.menu-button {
+  background-color: white;
+  color: red;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  display: flex;
+  border-radius: 6px;
+}
+
+#nav-links {
+  display: flex;
+  column-gap: 30px;
+}
+
+#nav-links a{
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#nav-links a:hover {
+  color: red;
+}
+
+#hero {
+  background-image: url(..//assets/images/wings-6946618_1280.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 90;
+}
+
+.menu-button:hover {
+  background-color: red;
+  color: white;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.sub-header {
+  display: flex;
+  flex-direction: column;
+}
+
+#about img {
+  width: 35%;
+  height: 35%px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+#about-text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.sub-header .courgette-regular {
+  font-size: 30px;
+  color: rgb(214, 28, 34);
+}
+
+.sub-header .poppins-bold {
+  font-size: 50px;
+  color: rgb(34, 34, 34);
+}
