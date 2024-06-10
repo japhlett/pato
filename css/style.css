@@ -555,3 +555,24 @@ p,
     height: 50px;
     margin: 10px;
 }
+
+/* footer section */
+#footer {
+display: inline-grid;
+grid-template-columns: auto auto auto;
+}
+
+
+.gallery_img{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 8px;
+  column-gap: 10px;
+
+}
+.gallery_img img {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 47.58px;
+  height: 47.58px;
+}
