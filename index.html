@@ -2,57 +2,334 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deliz Palace</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deliz Palace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <nav>
-        <img id="logo" src="./assets/logos/logo-no-background.png" alt="deliz-palace-logo">
-        <div id="nav-links">
-            <span><a href="">Home</a></span>
-            <span><a href="">Menu</a></span>
-            <span><a href="">Reservation</a></span>
-            <span><a href="">About</a></span>
-            <span><a href="">Gallery</a></span>
-            <span><a href="">Blog</a></span>
-            <span><a href="">Contact</a></span>
+  <nav>
+    <img id="logo" src="./assets/logos/deliz-palace-high-resolution-logo-transparent.png" alt="deliz-palace-logo" />
+    <div id="nav-links">
+      <span><a href="">Home</a></span>
+      <span><a href="">Menu</a></span>
+      <span><a href="">Reservation</a></span>
+      <span><a href="">About</a></span>
+      <span><a href="">Gallery</a></span>
+      <span><a href="">Blog</a></span>
+      <span><a href="">Contact</a></span>
+    </div>
+    <div id="social-icons">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </nav>
+  <section id="hero">
+    <div id="hero-overlay">
+      <header>
+        <span id="subtext1" class="courgette-regular">Welcome to</span>
+        <span id="subtext2" class="poppins-bold">Deliz Palace</span>
+      </header>
+      <!-- I created this span class so i could apply an overflow to it and animate the button -->
+      <span id="btn-anm"><button class="menu-button">LOOK MENU</button></span>
+    </div>
+  </section>
+  <section id="about">
+    <div id="about-text">
+      <div class="sub-header">
+        <span class="courgette-regular">Italian Restaurant</span>
+        <span class="poppins-bold">WELCOME</span>
+      </div>
+      <p>
+        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed
+        fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac
+        facilisis ligula sem id neque.
+      </p>
+      <div id="icon-link">
+        <span>Our Story</span>
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </div>
+    </div>
+    <img src="./assets/images/itallian restaurant.webp" alt="about image" />
+  </section>
+  <section id="discover">
+    <div id="discover-text">
+      <div class="sub-header">
+        <span class="courgette-regular">Discover</span>
+        <span class="poppins-bold">Deliz Palace</span>
+      </div>
+    </div>
+  </section>
+  <section class="row-container">
+    <div class="row">
+      <div class="column1">
+        <div class="column-image">
+          <img src="./assets/images/romantic_restaurant.jpg" alt="">
+          <a href="">
+            <h4>Romantic Restaurant</h4>
+          </a>
+          <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+          <div class="icon-link">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
         </div>
-        <!--<div id="social-icons"></div> -->
-    </nav>
-    <section id="hero">
-        <div id="hero-overlay">
-            <header>
-                <span id="subtext1" class="courgette-regular">Welcome to</span>
-                <span id="subtext2" class="poppins-bold">Deliz Palace</span>
-            </header>
-            <button class="menu-button">LOOK MENU</button>
+      </div>
+      <div class="column2">
+        <div class="column-image">
+          <img src="./assets/images/delicious_food.jpg" alt="">
+          <a href="">
+            <h4>Delicious Food</h4>
+          </a>
+          <p>Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna.</p>
+          <div class="icon-link">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
         </div>
-    </section>
-    <section id="about">
-        <div id="about-text">
-            <div class="sub-header">
-                <span class="courgette-regular">Fast Food Restaurant</span>
-                <span class="poppins-bold">WELCOME</span>
-            </div>
-            <p>
-                Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
-            </p>
-            <div id="about-link">
-                <span>Our Story</span>
-                <span>icon</span>
-            </div>
+      </div>
+      <div class="column3">
+        <div class="column-image">
+          <img src="./assets/images/red_wine.jpg" alt="">
+          <a href="">
+            <h4>Red Wine Loves You</h4>
+          </a>
+          <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+          <div class="icon-link">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
         </div>
-        <img src="./assets/images/fries.jpg" alt="about image">
-    </section>
+      </div>
+    </div>
+  </section> 
 
 
+  <section id="menu">
+    <div class="sub-header">
+      <span class="courgette-regular">Discover</span>
+      <span class="poppins-bold">Our Menu</span>
+    </div>
+    <div class="grid-container">
+      <div class="group1">
+        <img src="./assets/images/lunch (2).jpg" alt="lunch">
+      <a href="" class="btn-2">LUNCH</a>
+      </div>
+      <div class="group1">
+        <img src="./assets/images/dinner (2).jpg" alt="dinner">
+        <a href="" class="btn-2">DINNER</a>
+      </div>
+
+      <div class="group3">
+        <img src="./assets/images/drink (2).jpg" alt="drink">
+        <a href="" class="btn-2">DRINK</a>
+      </div>
+
+      <div class="group3">
+        <img src="./assets/images/starter (2).jpg" alt="starter">
+          <a href="" class="btn-2">STARTER</a>
+        
+      </div>
+      <div class="group2">
+        <img src="./assets/images/happy hour (2).jpg" alt="happy hour">
+        <a href="" class="btn-2">HAPPY HOUR</a>
+      </div>
+
+      <div class="group3">
+        <img src="./assets/images/dessert (2).jpg" alt="dessert">
+        <a href="" class="btn-2">DESSERT</a>
+      </div>
+    </div>
+  </section>
+  <section id="reservation">
+    <div id="section1">
+      <div class="sub-header">
+        <span class="courgette-regular">Reservation</span>
+        <span class="poppins-bold">BOOK TABLE</span>
+      </div>
+      <form action="">
+        <div id="input-grid">
+          <span class="form-item">
+            <label for="date">Date</label>
+            <input type="date" id="date">
+          </span>
+          <span class="form-item">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+          </span>
+          <span class="form-item">
+            <label for="time">Time</label>
+            <input type="time" id="time">
+          </span>
+          <span class="form-item">
+            <label for="phone">Phone</label>
+            <input type="number" id="phone">
+          </span>
+          <span class="form-item">
+            <label for="people">People</label>
+            <select name="people" id="people">
+              <option value="1person">1 Person</option>
+              <option value="2people">2 People</option>
+              <option value="3people">3 People</option>
+              <option value="4people">4 People</option>
+              <option value="5people">5 People</option>
+              <option value="6people">6 People</option>
+              <option value="7people">7 People</option>
+              <option value="8people">8 People</option>
+              <option value="9people">9 People</option>
+              <option value="10people">10 People</option>
+              <option value="11people">11 People</option>
+              <option value="12people">12 People</option>
+              </select>
+          </span>
+          <span class="form-item">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </span>
+        </div>
+      </form>
+      <button id="button">Book Table</button>
+    </div>
+    <img src="./assets/images/reservation.jpg" alt="">
+  </section>
+  <section class="swiper mySwiper">
+    <div class="sub-header">
+      <span class="courgette-regular">Customers Say</span>
+      <span class="poppins-bold">REVIEW</span>
+    </div>
+    <div class="swiper-wrapper">
+      
+      <!-- first slider -->
+      <div class="swiper-slide">
+        <div class="review-container">
+          <div class="circular-image">
+            <img src="./assets/images/review_1.webp" alt="Customer Picture">
+          </div>
+          <p>“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+          <div class="review-stars">
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+          </div>
+          <span class="customer-details">
+            MARIE SIMMONS - NEW YORK
+          </span>
+        </div>     
+      </div>
+
+      <!-- Second slider -->
+      <div class="swiper-slide">
+        <div class="review-container">
+          <div class="circular-image">
+            <img src="./assets/images/review_1.webp" alt="Customer Picture">
+          </div>
+          <p>“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+          <div class="review-stars">
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+          </div>
+          <span class="customer-details">
+            MARIE SIMMONS - NEW YORK
+          </span>
+        </div>     
+      </div>
+
+      <!-- Third Slider -->
+      <div class="swiper-slide">
+        <div class="review-container">
+          <div class="circular-image">
+            <img src="./assets/images/review_1.webp" alt="Customer Picture">
+          </div>
+          <p>“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+          <div class="review-stars">
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+            <i class="fa-solid fa-star" style="color: #ec1d25;"></i>
+          </div>
+          <span class="customer-details">
+            MARIE SIMMONS - NEW YORK
+          </span>
+        </div>     
+      </div>
+ 
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  <section id="video-sec">
+    <video id="video" autoplay muted loop src="./assets/videos/discover_food_video.mp4" type="video/mp4"></video>
+    <div id="video-overlay">
+      <div class="sub-header">
+        <span class="courgette-regular">Discover</span>
+        <span class="poppins-bold">Our Video</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="row-container">
+    <div class="row">
+      <div class="column1">
+        <div class="column-image">
+          <img src="./assets/images/romantic_restaurant.jpg" alt="">
+          <a href="">
+            <h4>BEST PLACES FOR WINE</h4>
+          </a>
+          <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+          <div class="icon-link">
+            <span>CONTINUE READING</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column2">
+        <div class="column-image">
+          <img src="./assets/images/delicious_food.jpg" alt="">
+          <a href="">
+            <h4>EGGS AND CHEESE</h4>
+          </a>
+          <p>Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat</p>
+          <div class="icon-link">
+            <span>CONTINUE READING</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column3">
+        <div class="column-image">
+          <img src="./assets/images/red_wine.jpg" alt="">
+          <a href="">
+            <h4>STYLE THE WEDDING PARTY</h4>
+          </a>
+          <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+          <div class="icon-link">
+            <span>CONTINUE READING</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
 </body>
 
 </html>
